@@ -1,5 +1,4 @@
 # homework
-!!!!
 var a = prompt(Array);
 
 for(let i = 0; i < Array.length; i++){

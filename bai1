@@ -1,19 +1,44 @@
-var a = prompt(Array);
+let TKNP = function(arr, x, start, end){//func tim kiem nhi phan
 
-for(let i = 0; i < Array.length; i++){
-
-    for(let j = Array.length - 1; j > i; j--){
-
-        if(a[j] < a[j - 1]){
-
-           let tmp = a[j];
-           
-           a[j] = a[j - 1];
-
-           a[j - 1] = tmp;
-
-        }
+    //dieu kien
+    if(start > end){
+        
+        return false;
 
     }
+
+    //tim chi so chinh giua
+    let mid = Math.floor((start + end)/2);
+
+    //so sanh gia tri mid vs x
+    if(arr[mid] == x){
+
+        return true;
+
+    }
+    //neu gia tri mid lon hon x >> xet mang phia nua trai cua mang
+    if(arr[mid] > x){
+
+        return hamDeQui(arr, x, start, mid - 1);
+
+    }else{//nguoc lai
+
+        return hamDeQui(arr, x, mid + 1, end);
+
+    }
+}
+
+//main
+let arr = [1, 5, 2, 7, 4, 9, 10];
+
+let x = 5;
+
+if(TKNP(arr, x, 0, arr.length - 1)){//kiem tra
+
+    console.log("tim thay x!");
+
+}else{
+
+    console.log("k tim thay x!");
 
 }

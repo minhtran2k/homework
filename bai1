@@ -31,6 +31,8 @@ let TKNP = function(arr, x, start, end){//func tim kiem nhi phan
 //main
 let arr = [1, 5, 2, 7, 4, 9, 10];
 
+arr.sort();
+
 let x = 5;
 
 if(TKNP(arr, x, 0, arr.length - 1)){//kiem tra

@@ -82,7 +82,7 @@ function oldestAge(array){ //ham tim tuoi lon nhat
             
             if(array[j].age > array[j + 1].age){
 
-                let tmp = array[j];
+                let tmp = array[j];   //swap
 
                 array[j] = array[j + 1];
 
@@ -163,6 +163,8 @@ function over24(array){
     }
 
 }
+
+//main..
 
 over24(students);//tren 24
 

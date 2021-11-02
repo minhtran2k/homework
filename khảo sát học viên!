@@ -1,0 +1,175 @@
+let students = [ //mang doi tuong
+    
+    {
+    
+        name: "Minh",
+    
+        age: 21,
+    
+        address: "HP",
+    
+        region: "North",
+    
+        firstTestScore: 99,
+    
+    },
+    
+    {
+    
+        name: "Son",
+    
+        age: 25,
+    
+        address: "Hanoi",
+    
+        region: "North",
+    
+        firstTestScore: 95,
+
+    },
+    
+    {
+    
+        name: "Hung",
+    
+        age: 18,
+    
+        address: "SG",
+    
+    
+        region: "North",
+    
+        firstTestScore: 90,
+    
+    },
+    
+    {
+    
+        name: "Kien",
+    
+        age: 24,
+    
+        address: "Hue",
+    
+        region: "North",
+    
+        firstTestScore: 100,
+    
+    },
+    
+    {
+    
+        name: "Long",
+    
+        age: 34,
+    
+        address: "HCM",
+    
+        region: "South",
+    
+        firstTestScore: 97,
+
+    
+    }
+    
+];
+
+function oldestAge(array){ //ham tim tuoi lon nhat
+
+    for (let i = 0; i < array.length - 1; i++) {
+        
+        for (let j = i + 1; j < array.length - 1; j++) {
+            
+            if(array[j].age > array[j + 1].age){
+
+                let tmp = array[j];
+
+                array[j] = array[j + 1];
+
+                array[j + 1] = tmp;
+
+            }
+
+        }
+
+    }
+
+    console.log("nguoi co do tuoi cao nhat la:", array[array.length - 1].name , "co so tuoi la", array[array.length - 1].age);
+
+}
+
+function inHanoi(array){
+
+    for (let i = 0; i < array.length - 1; i++) {
+      
+        if(array[i].address == "Hanoi"){
+
+            console.log(array[i].name, "o HN!");
+
+        }
+        
+    }
+
+}
+
+function highestTestScore(array){
+
+    for (let i = 0; i < array.length - 1; i++) {
+        
+        for (let j = i + 1; j < array.length - 1; j++) {
+            
+            if(array[j].firstTestScore > array[j + 1].firstTestScore){
+
+                let tmp = array[j];
+
+                array[j] = array[j + 1];
+
+                array[j + 1] = tmp;
+
+            }
+
+        }
+        
+    }
+
+    console.log("nguoi co diem dau vao cao nhat la: ", array[array.length - 1].name, " co so diem la: ", array[array.length - 1].firstTestScore);
+
+} 
+
+function inNorthSide(array){
+
+    for (let index = 0; index < array.length - 1; index++) {
+        
+        if(array[index].region == "North"){
+
+            console.log("nguoi song tai mien bac: ", array[index].name);
+
+        }
+
+    }
+
+}
+
+function over24(array){
+
+    for (let index = 0; index < array.length; index++) {
+        
+        if(array[index].age > 24){
+
+            console.log("nguoi tren 24 tuoi: ", array[index].name, "voi ", array[index].age, " tuoi");
+
+        }
+        
+    }
+
+}
+
+over24(students);//tren 24
+
+highestTestScore(students);//diem dau vao cao nhat
+
+inHanoi(students);//o HN
+
+inNorthSide(students);//o mien Bac
+
+oldestAge(students);//nhieu tuoi nhat

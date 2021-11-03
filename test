@@ -1,0 +1,136 @@
+//bai 1: dao nguoc chuoi
+function daoNguocChuoi(str){
+
+    let string = "";//khoi tao chuoi rong~
+
+    for(let i = str.length - 1; i >= 0; i--){//truyen vao string tu chu cai cuoi den dau
+
+        string += str[i];
+
+    }
+
+    return string;    
+}
+
+
+daoNguocChuoi(str);
+
+
+
+
+
+//bai 2: in hoa chu cai dau
+
+let str1 = prompt("nhap chuoi");
+
+const chiaCatChuoi = str1.split(" ");
+
+for (let i = 0; i < chiaCatChuoi.length; i++) {
+    
+    chiaCatChuoi[i] = chiaCatChuoi[i].charAt(0).toUpperCase() + chiaCatChuoi[i].slice(1);
+
+}
+
+const str2 = chiaCatChuoi.join(" ");
+
+console.log(str2);
+
+
+
+
+
+bai 3// Viết một chương trình xóa các phần tử trùng của một mảng và in ra kết quả
+
+function daXuatHien(arr, x){
+
+    for (let index = 0; index < arr.length; index++) {
+        
+        if(arr[index] == x){
+
+            return true;
+
+        }
+        
+    }
+    
+    return false;
+}
+//main
+let array = prompt("nhap mang:");
+
+for (let index = 0; index < array.length; index++) {
+    
+    if(!daXuatHien(array, array[index])){
+
+        console.log(array[index]);
+
+    }
+
+}
+
+//bai 4
+const studens=[
+    {
+       
+       name:"a";
+      
+      age: 22;
+       
+       luong: 20;
+       
+       chucvu:"hocsinh";
+    }
+    {
+        
+        name:"b";
+        
+        age: 20;
+        
+        luong: 30;
+        
+        chucvu:"hocsinh";
+    
+    }
+    
+    {
+    
+        name:"c";
+    
+        age: 21;
+    
+        luong: 40;
+        
+        chucvu:"hocsinh";
+    }
+]
+for(let i=0;i<studens.length,i++)
+{
+    
+    const h=studens[i];
+    
+    console.log(h);
+}
+
+//them
+const Minh = {
+        
+        name:"a";
+        
+        age: 21;
+        
+        luong: 40;
+        
+        chucvu:"hocsinh";
+
+}
+
+studens.push();
+
+console.log(studens);
+
+//xoa
+
+studens.shift();
+
+console.log(studens);
+    

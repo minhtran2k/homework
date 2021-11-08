@@ -51,3 +51,21 @@ if (a == 0) {
     }
 
 }
+
+//bai2: tinh tbc 100 so tu nhien
+
+let i = 0;
+
+let sum = 0;
+
+do {
+
+    sum += i;
+
+    i++;
+
+} while (i < 100);
+
+let tbc = sum / 100;
+
+console.log("tbc cua 100 so tu nhien: ", tbc);

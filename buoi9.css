@@ -1,0 +1,253 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 80px;
+}
+
+.fashion {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    width: 368px;
+}
+
+.home {
+    color: #C9A96E;
+}
+
+.hero-container {
+    background-image: url(./anh.png);
+    height: 700px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 0 59px 375px;
+    color: white;
+}
+
+.hero-container>.hero-tag {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 52px;
+}
+
+.hero-container>.hero-title {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    width: 560px;
+}
+
+.hero-container>.hero-description {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    width: 283px;
+}
+
+.bigSec {
+    display: flex;
+    margin-top: 60px;
+    margin-left: -70px;
+}
+
+.leftDau {
+    margin-top: 60px;
+    display: flex;
+    width: 570px;
+}
+
+.leftDau>.pic1 {
+    padding-left: 375px;
+    width: 370px;
+    height: 421.33px;
+}
+
+.leftDau>.pic1>img {
+    width: 370px;
+    height: 281.33px;
+}
+
+.leftDau>.pic1>.div1 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftDau>.pic1>.div1>.div11 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #C9A96E;
+}
+
+.leftDau>.pic1>.div1>.div12 {
+    margin-top: 5px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    width: 265px;
+    padding-left: 50px;
+    text-align: center;
+    color: black
+}
+
+.leftDau>.pic1>.div1>.div13 {
+    margin-top: 5px;
+    text-align: center;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.leftDau>.pic2 {
+    margin-left: 15px;
+    width: 370px;
+    height: 281.33px;
+}
+
+.leftDau>.pic2>img {
+    width: 370px;
+    height: 281.33px;
+}
+
+.leftDau>.pic2>.div2 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftDau>.pic2>.div2>.div21 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #C9A96E;
+}
+
+.leftDau>.pic2>.div2>.div22 {
+    margin-top: 5px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    width: 265px;
+    padding-left: 50px;
+    text-align: center;
+    color: black
+}
+
+.leftDau>.pic2>.div2>.div23 {
+    margin-top: 5px;
+    text-align: center;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.rightDau {
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 600px;
+}
+
+.rightDau>.sec>.box1 {
+    width: 200px;
+    height: 50px;
+    background: hsl(0, 0%, 95%);
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rightDau>.sec {}
+
+.rightDau>.sec>img {
+    margin-top: 18px;
+    width: 200px;
+}
+
+.rightDau>.sec>.vid1 {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rightDau>.sec>.vid2 {
+    margin-top: 4px;
+    font-family: PT Serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #B1B1B1;
+}
+
+.rightDau>.sec>.vid3 {
+    margin-top: 15px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+}
+
+.rightDau>.sec>.box2 {
+    width: 200px;
+    height: 50px;
+    background: hsl(0, 0%, 95%);
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    text-align: center;
+    color: #C9A96E;
+}
